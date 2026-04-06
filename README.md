@@ -1,50 +1,143 @@
-# Welcome to your Expo app 👋
+# 📄 Product Requirements Document (PRD)
+## 🚍 Smart Transport App for Schools & Colleges
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+---
 
-## Get started
+### 1. 📌 Overview
+* **Product Name:** Smart Campus Transport 
+* **Platform:** React Native (Android & iOS)
+* **Target Users:**
+    * Students
+    * Parents
+    * School/College Admins
+    * Transport Staff (Drivers/Operators)
 
-1. Install dependencies
+#### Problem Statement
+Students and parents often lack clear information about transport routes, pricing, timings, and real-time bus tracking. Current systems are mostly manual, inefficient, and lack transparency.
 
-   ```bash
-   npm install
-   ```
+#### Solution
+A mobile app that provides complete transport information, booking options, and real-time tracking of buses for safer and more efficient commuting.
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+### 2. 🎯 Objectives
+* Provide transparent transport information (routes, stops, fees)
+* Enable easy booking of transport services
+* Offer live bus tracking
+* Improve student safety and punctuality
+* Digitize transport management for institutions
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 3. 👥 User Roles
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+| Role | Responsibilities |
+| :--- | :--- |
+| **Student / Parent** | View routes, stops, pricing; Book seats; Track live; Notifications. |
+| **Admin** | Manage buses, routes, and pricing; Approve bookings; Monitor fleet. |
+| **Driver** | Start/stop trips; Share live location; View assigned routes. |
 
-## Get a fresh project
+---
 
-When you're ready, run:
+### 4. 🔑 Key Features
 
-```bash
-npm run reset-project
-```
+#### 🚍 4.1 Transport Information
+* List of available buses
+* Route details (**Start → Stops → Destination**)
+* Timings and seat availability
+* Pricing details
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+#### 📍 4.2 Route Visualization
+* Map view of bus routes
+* Stop-wise breakdown
+* Estimated arrival times
 
-## Learn more
+#### 📡 4.3 Live Bus Tracking
+* Real-time GPS tracking
+* Visual bus icons on map
+* **ETA** (Estimated Time of Arrival)
+* Proximity alerts (e.g., *"Bus is 5 mins away"*)
 
-To learn more about developing your project with Expo, look at the following resources:
+#### 🧾 4.4 Booking System
+* Route selection based on home location
+* Pickup/drop point selection
+* Seat booking
+* Payment integration (Optional for MVP)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+#### 🔔 4.5 Notifications
+* Bus arrival and delay alerts
+* Booking confirmations
 
-## Join the community
+#### 👤 4.6 User Profiles
+* Student details and pickup location
+* Assigned bus data
 
-Join our community of developers creating universal apps.
+#### 🧑‍💼 4.7 Admin Dashboard (Web or Mobile)
+* CRUD operations for routes/drivers
+* Booking management
+* Live fleet monitoring
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+#### 🚗 4.8 Driver App Features
+* Simple Login
+* **Start/Stop Trip** toggle
+* Live GPS location sharing
+* Basic route navigation
+
+---
+
+### 5. ⭐ Additional Smart Features
+* **🔐 Safety Features:** Emergency SOS button and live location sharing with parents.
+* **📊 Analytics Dashboard:** Bus usage stats and route optimization suggestions.
+* **🤖 Smart Route Suggestion:** Suggests best route based on user location.
+* **📶 Offline Mode:** Show last saved routes without internet.
+* **💬 Feedback System:** Student rating system for transport services.
+
+---
+
+### 6. 🛠️ Tech Stack
+* **Frontend:** React Native (Expo optional)
+* **Backend:** Node.js + Express
+* **Database:** MongoDB
+* **Real-time Tracking:** Firebase Realtime DB / Socket.io
+* **Maps & Location:** Google Maps API
+* **Authentication:** JWT / Firebase Auth
+
+---
+
+### 7. 📱 User Flow
+1.  **Onboarding:** Sign up/Login.
+2.  **Selection:** Select school/college.
+3.  **Discovery:** View routes and nearest stops.
+4.  **Action:** Book a seat.
+5.  **Execution:** Track bus in real-time.
+
+---
+
+### 8. 📊 MVP Scope (Minimum Viable Product)
+> **Focus:** User Auth, Route/Stop views, Basic Booking, Core Live Tracking ,Payments.
+>
+> **Exclude:** Advanced Analytics.
+
+---
+
+### 9. ⚠️ Challenges & Risks
+* GPS accuracy and signal loss.
+* Heavy internet dependency for real-time updates.
+* Performance scaling for tracking multiple vehicles.
+* Data privacy and security.
+
+---
+
+### 10. 📅 Future Scope
+* AI-based route optimization.
+* Integration with School ERP systems.
+* Multi-city support.
+* Attendance tracking via bus sensors.
+
+---
+
+### 11. 🎯 Success Metrics
+* **DAU/MAU:** Number of active users.
+* **Conversion:** Booking completion rate.
+* **Retention:** Tracking usage frequency.
+* **CSAT:** User satisfaction ratings.
